@@ -1,0 +1,455 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>CSS | Grid Demo</title>
+    <meta name="description" content="CSS Grid Demo">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="logo.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="assets/styles/style.css">
+</head>
+
+<body>
+    <header class="">
+        <h1>CSS Grid</h1>
+        <span class="subtitle">-A Demo!</span>
+    </header>
+    <main class="">
+        <section class="modifiers">
+            <div class="search">
+                <em class="fa fa-search"></em>
+                <input id="searchInput" type="search" placeholder="Search (by tags)" name="tags-search" />
+                <label for="searchInput" hidden="hidden">Search</label>
+            </div>
+            <div class="sort">
+                <span class="radio-span">Sort by</span>
+                <div class="input-radio">
+                    <p>
+                        <input type="radio" id="sortByRating" name="sortOption" value="rate" checked>
+                        <label for="sortByRating">Rating</label>
+                    </p>
+                    <p>
+                        <input type="radio" id="sortByLike" name="sortOption" value="like">
+                        <label for="sortByLike">Like</label>
+                    </p>
+                </div>
+            </div>
+            <div class="analytics">
+                Page Likes: <span class="tot-like">7 </span>| Page Visits: <span class="page-hits">55</span>
+            </div>
+        </section>
+        <section class="element-section">
+            <article data-tag="basic, easy" data-like="2" data-rate="5" data-title="easy">
+                <img src="assets/images/question.png" height="100" width="100" alt="NA" />
+                <div class="problem-data">
+                    <h2>Home Name</h2>
+                    <div class="stats">
+                        <span>Found by:</span><span>me</span>
+                        <span>|</span>
+                        <span>you</span>
+                    </div>
+                    <div class="author">
+                        <em class="fa fa-home"></em>
+                        <span>home</span>
+                    </div>
+                    <div class="description">
+                        <em class="fa fa-tag"></em>
+                        <span>address</span>
+                    </div>
+                    <div class="links">
+                        <em class="fa fa-link"></em>
+                        <span>
+                            <a href="" title="" target="_blank">
+                                link
+                            </a>
+                        </span>
+                        <span class="likes-info">
+                            <em class="fa fa-thumbs-o-up"></em>
+                            <span class="article-likes">2</span>
+                        </span>
+                    </div>
+                </div>
+            </article>
+            <article data-tag="basic, easy" data-like="2" data-rate="5" data-title="easy">
+                <img src="assets/images/question.png" height="100" width="100" alt="NA" />
+                <div class="problem-data">
+                    <h2>Home Name</h2>
+                    <div class="stats">
+                        <span>Found by:</span><span>me</span>
+                        <span>|</span>
+                        <span>you</span>
+                    </div>
+                    <div class="author">
+                        <em class="fa fa-home"></em>
+                        <span>home</span>
+                    </div>
+                    <div class="description">
+                        <em class="fa fa-tag"></em>
+                        <span>address</span>
+                    </div>
+                    <div class="links">
+                        <em class="fa fa-link"></em>
+                        <span>
+                            <a href="" title="" target="_blank">
+                                link
+                            </a>
+                        </span>
+                        <span class="likes-info">
+                            <em class="fa fa-thumbs-o-up"></em>
+                            <span class="article-likes">2</span>
+                        </span>
+                    </div>
+                </div>
+            </article>
+            <article data-tag="basic, brute force" data-like="4" data-rate="1" data-title="brute">
+                <img src="assets/images/question.png" height="100" width="100" alt="NA" />
+                <div class="problem-data">
+                    <h2>Home Name</h2>
+                    <div class="stats">
+                        <span>Found by:</span><span>me</span>
+                        <span>|</span>
+                        <span>you</span>
+                    </div>
+                    <div class="author">
+                        <em class="fa fa-home"></em>
+                        <span>home</span>
+                    </div>
+                    <div class="description">
+                        <em class="fa fa-tag"></em>
+                        <span>address</span>
+                    </div>
+                    <div class="links">
+                        <em class="fa fa-link"></em>
+                        <span>
+                                        <a href="" title="" target="_blank">
+                                            link
+                                        </a>
+                                    </span>
+                        <span class="likes-info">
+                                        <em class="fa fa-thumbs-o-up"></em>
+                                        <span class="article-likes">4</span>
+                        </span>
+                    </div>
+                </div>
+            </article>
+            <article data-tag="theory, hard" data-like="1" data-rate="0.5" data-title="hard">
+                <img src="assets/images/question.png" height="100" width="100" alt="NA" />
+                <div class="problem-data">
+                    <h2>Home Name</h2>
+                    <div class="stats">
+                        <span>Found by:</span><span>me</span>
+                        <span>|</span>
+                        <span>you</span>
+                    </div>
+                    <div class="author">
+                        <em class="fa fa-home"></em>
+                        <span>home</span>
+                    </div>
+                    <div class="description">
+                        <em class="fa fa-tag"></em>
+                        <span>address</span>
+                    </div>
+                    <div class="links">
+                        <em class="fa fa-link"></em>
+                        <span>
+                                            <a href="" title="" target="_blank">
+                                                link
+                                            </a>
+                                        </span>
+                        <span class="likes-info">
+                                            <em class="fa fa-thumbs-o-up"></em>
+                                            <span class="article-likes">1</span>
+                        </span>
+                    </div>
+                </div>
+            </article>
+            <article data-tag="theory, hard" data-like="1" data-rate="0.5" data-title="hard">
+                <img src="assets/images/question.png" height="100" width="100" alt="NA" />
+                <div class="problem-data">
+                    <h2>Home Name</h2>
+                    <div class="stats">
+                        <span>Found by:</span><span>me</span>
+                        <span>|</span>
+                        <span>you</span>
+                    </div>
+                    <div class="author">
+                        <em class="fa fa-home"></em>
+                        <span>home</span>
+                    </div>
+                    <div class="description">
+                        <em class="fa fa-tag"></em>
+                        <span>address</span>
+                    </div>
+                    <div class="links">
+                        <em class="fa fa-link"></em>
+                        <span>
+                                            <a href="" title="" target="_blank">
+                                                link
+                                            </a>
+                                        </span>
+                        <span class="likes-info">
+                                            <em class="fa fa-thumbs-o-up"></em>
+                                            <span class="article-likes">1</span>
+                        </span>
+                    </div>
+                </div>
+            </article>
+            <article data-tag="theory, hard" data-like="1" data-rate="0.5" data-title="hard">
+                <img src="assets/images/question.png" height="100" width="100" alt="NA" />
+                <div class="problem-data">
+                    <h2>Home Name</h2>
+                    <div class="stats">
+                        <span>Found by:</span><span>me</span>
+                        <span>|</span>
+                        <span>you</span>
+                    </div>
+                    <div class="author">
+                        <em class="fa fa-home"></em>
+                        <span>home</span>
+                    </div>
+                    <div class="description">
+                        <em class="fa fa-tag"></em>
+                        <span>address</span>
+                    </div>
+                    <div class="links">
+                        <em class="fa fa-link"></em>
+                        <span>
+                                            <a href="" title="" target="_blank">
+                                                link
+                                            </a>
+                                        </span>
+                        <span class="likes-info">
+                                            <em class="fa fa-thumbs-o-up"></em>
+                                            <span class="article-likes">1</span>
+                        </span>
+                    </div>
+                </div>
+            </article>
+            <article data-tag="theory, hard" data-like="1" data-rate="0.5" data-title="hard">
+                <img src="assets/images/question.png" height="100" width="100" alt="NA" />
+                <div class="problem-data">
+                    <h2>Home Name</h2>
+                    <div class="stats">
+                        <span>Found by:</span><span>me</span>
+                        <span>|</span>
+                        <span>you</span>
+                    </div>
+                    <div class="author">
+                        <em class="fa fa-home"></em>
+                        <span>home</span>
+                    </div>
+                    <div class="description">
+                        <em class="fa fa-tag"></em>
+                        <span>address</span>
+                    </div>
+                    <div class="links">
+                        <em class="fa fa-link"></em>
+                        <span>
+                                            <a href="" title="" target="_blank">
+                                                link
+                                            </a>
+                                        </span>
+                        <span class="likes-info">
+                                            <em class="fa fa-thumbs-o-up"></em>
+                                            <span class="article-likes">1</span>
+                        </span>
+                    </div>
+                </div>
+            </article>
+            <article data-tag="theory, hard" data-like="1" data-rate="0.5" data-title="hard">
+                <img src="assets/images/question.png" height="100" width="100" alt="NA" />
+                <div class="problem-data">
+                    <h2>Home Name</h2>
+                    <div class="stats">
+                        <span>Found by:</span><span>me</span>
+                        <span>|</span>
+                        <span>you</span>
+                    </div>
+                    <div class="author">
+                        <em class="fa fa-home"></em>
+                        <span>home</span>
+                    </div>
+                    <div class="description">
+                        <em class="fa fa-tag"></em>
+                        <span>address</span>
+                    </div>
+                    <div class="links">
+                        <em class="fa fa-link"></em>
+                        <span>
+                                            <a href="" title="" target="_blank">
+                                                link
+                                            </a>
+                                        </span>
+                        <span class="likes-info">
+                                            <em class="fa fa-thumbs-o-up"></em>
+                                            <span class="article-likes">1</span>
+                        </span>
+                    </div>
+                </div>
+            </article>
+            <article data-tag="theory, hard" data-like="1" data-rate="0.5" data-title="hard">
+                <img src="assets/images/question.png" height="100" width="100" alt="NA" />
+                <div class="problem-data">
+                    <h2>Home Name</h2>
+                    <div class="stats">
+                        <span>Found by:</span><span>me</span>
+                        <span>|</span>
+                        <span>you</span>
+                    </div>
+                    <div class="author">
+                        <em class="fa fa-home"></em>
+                        <span>home</span>
+                    </div>
+                    <div class="description">
+                        <em class="fa fa-tag"></em>
+                        <span>address</span>
+                    </div>
+                    <div class="links">
+                        <em class="fa fa-link"></em>
+                        <span>
+                                            <a href="" title="" target="_blank">
+                                                link
+                                            </a>
+                                        </span>
+                        <span class="likes-info">
+                                            <em class="fa fa-thumbs-o-up"></em>
+                                            <span class="article-likes">1</span>
+                        </span>
+                    </div>
+                </div>
+            </article>
+            <article data-tag="theory, hard" data-like="1" data-rate="0.5" data-title="hard">
+                <img src="assets/images/question.png" height="100" width="100" alt="NA" />
+                <div class="problem-data">
+                    <h2>Home Name</h2>
+                    <div class="stats">
+                        <span>Found by:</span><span>me</span>
+                        <span>|</span>
+                        <span>you</span>
+                    </div>
+                    <div class="author">
+                        <em class="fa fa-home"></em>
+                        <span>home</span>
+                    </div>
+                    <div class="description">
+                        <em class="fa fa-tag"></em>
+                        <span>address</span>
+                    </div>
+                    <div class="links">
+                        <em class="fa fa-link"></em>
+                        <span>
+                                            <a href="" title="" target="_blank">
+                                                link
+                                            </a>
+                                        </span>
+                        <span class="likes-info">
+                                            <em class="fa fa-thumbs-o-up"></em>
+                                            <span class="article-likes">1</span>
+                        </span>
+                    </div>
+                </div>
+            </article>
+            <article data-tag="theory, hard" data-like="1" data-rate="0.5" data-title="hard">
+                <img src="assets/images/question.png" height="100" width="100" alt="NA" />
+                <div class="problem-data">
+                    <h2>Home Name</h2>
+                    <div class="stats">
+                        <span>Found by:</span><span>me</span>
+                        <span>|</span>
+                        <span>you</span>
+                    </div>
+                    <div class="author">
+                        <em class="fa fa-home"></em>
+                        <span>home</span>
+                    </div>
+                    <div class="description">
+                        <em class="fa fa-tag"></em>
+                        <span>address</span>
+                    </div>
+                    <div class="links">
+                        <em class="fa fa-link"></em>
+                        <span>
+                                            <a href="" title="" target="_blank">
+                                                link
+                                            </a>
+                                        </span>
+                        <span class="likes-info">
+                                            <em class="fa fa-thumbs-o-up"></em>
+                                            <span class="article-likes">1</span>
+                        </span>
+                    </div>
+                </div>
+            </article>
+            <article data-tag="theory, hard" data-like="1" data-rate="0.5" data-title="hard">
+                <img src="assets/images/question.png" height="100" width="100" alt="NA" />
+                <div class="problem-data">
+                    <h2>Home Name</h2>
+                    <div class="stats">
+                        <span>Found by:</span><span>me</span>
+                        <span>|</span>
+                        <span>you</span>
+                    </div>
+                    <div class="author">
+                        <em class="fa fa-home"></em>
+                        <span>home</span>
+                    </div>
+                    <div class="description">
+                        <em class="fa fa-tag"></em>
+                        <span>address</span>
+                    </div>
+                    <div class="links">
+                        <em class="fa fa-link"></em>
+                        <span>
+                                            <a href="" title="" target="_blank">
+                                                link
+                                            </a>
+                                        </span>
+                        <span class="likes-info">
+                                            <em class="fa fa-thumbs-o-up"></em>
+                                            <span class="article-likes">1</span>
+                        </span>
+                    </div>
+                </div>
+            </article>
+            <article data-tag="theory, hard" data-like="1" data-rate="0.5" data-title="hard">
+                <img src="assets/images/question.png" height="100" width="100" alt="NA" />
+                <div class="problem-data">
+                    <h2>Home Name</h2>
+                    <div class="stats">
+                        <span>Found by:</span><span>me</span>
+                        <span>|</span>
+                        <span>you</span>
+                    </div>
+                    <div class="author">
+                        <em class="fa fa-home"></em>
+                        <span>home</span>
+                    </div>
+                    <div class="description">
+                        <em class="fa fa-tag"></em>
+                        <span>address</span>
+                    </div>
+                    <div class="links">
+                        <em class="fa fa-link"></em>
+                        <span>
+                                            <a href="" title="" target="_blank">
+                                                link
+                                            </a>
+                                        </span>
+                        <span class="likes-info">
+                                            <em class="fa fa-thumbs-o-up"></em>
+                                            <span class="article-likes">1</span>
+                        </span>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer class="">
+        <span>All ends up here</span>
+        <em class="fa fa-arrow-circle-o-up"></em>
+    </footer>
+</body>
+
+</html>
